@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #161616;
+}
+
+.card {
+    width: 70%;
+    height: 680px;
+    max-width: 400px;
+    background-image: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 0 auto;
+    border: 1px solid #00feba;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.menu{
+    font-size: xx-small;
+    width: 36px;
+    height: 26px;
+    border: 0;
+    outline: 0;
+    background: #effaf6;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.search input{
+  flex: 1;
+  padding: 10px;
+  border-radius: 4rem;
+  border: none;
+  margin-right: 20px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 40rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.weather {
+  text-align: center;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+   font-size: 85px;
+   font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin-top: 40px;
+}
+.details .col {
+  flex: 1;
+  text-align: center;
+}
+
+.img{
+    width: 60px;
+    position: relative;
+    top: -1px;
+    right: -5px;
+}
+.wind{
+    position: relative;
+    top: -2px;
+    right: -5px;
+    font-size: 15px;
+}
+.image{
+    width: 60px;
+}
+.error{
+    text-align: center;
+    margin-left: 10px;
+    font-size: 24px;
+    margin-top: 100px;
+    display: none;
+    color: red;
+}
+@media (max-width: 600px) {
+    .card {
+      width: 99%;
+      height: auto;
+      max-width: 100%;
+      margin-top: 0%;
+      padding: 10px 25px;
+      border-radius: 20px;
+    }
+  
+    .weather-icon {
+      width: 180px;
+      margin-top: 20px;
+    }
+  
+    .weather h1 {
+      font-size: 50px;
+    }
+  
+    .weather h2 {
+      font-size: 30px;
+      margin-top: 0;
+    }
+  
+    .details {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .img {
+      top: 0;
+      right: 0;
+    }
+  
+    .wind {
+      top: 0;
+      right: 0;
+    }
+  }
